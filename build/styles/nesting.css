@@ -1,20 +1,21 @@
 /*
 Error: Undefined variable: "$green".
-        on line 5 of src/styles/nesting.scss
+        on line 6 of src/styles/nesting.scss
 
-1: .nesting {
-2: 	.panel.panel-default {
-3: 		.panel-heading {
-4:   			color: #FFFFFF;
-5:   			background: $green;
-6:         }
-7:   		.panel-body .panel.panel-default{
-8:   			.panel-heading {
-9:   				background: $blue;
-10:   			}
+1: @import 'mixins';
+2: .nesting {
+3: 	.panel.panel-default {
+4: 		.panel-heading {
+5:   			color: #FFFFFF;
+6:   			background: $green;
+7:         }
+8:   		.panel-body .panel.panel-default{
+9:   			@include shadow(rgba(122,122,122,1));
+10:   			.panel-heading {
+11:   				background: $blue;
 
 Backtrace:
-src/styles/nesting.scss:5
+src/styles/nesting.scss:6
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -87,4 +88,4 @@ src/styles/nesting.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$green\".\A         on line 5 of src/styles/nesting.scss\A \A 1: .nesting {\A 2: 	.panel.panel-default {\A 3: 		.panel-heading {\A 4:   			color: #FFFFFF;\A 5:   			background: $green;\A 6:         }\A 7:   		.panel-body .panel.panel-default{\A 8:   			.panel-heading {\A 9:   				background: $blue;\A 10:   			}"; }
+  content: "Error: Undefined variable: \"$green\".\A         on line 6 of src/styles/nesting.scss\A \A 1: @import 'mixins';\A 2: .nesting {\A 3: 	.panel.panel-default {\A 4: 		.panel-heading {\A 5:   			color: #FFFFFF;\A 6:   			background: $green;\A 7:         }\A 8:   		.panel-body .panel.panel-default{\A 9:   			@include shadow(rgba(122,122,122,1));\A 10:   			.panel-heading {\A 11:   				background: $blue;"; }

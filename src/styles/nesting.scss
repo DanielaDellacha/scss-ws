@@ -1,3 +1,4 @@
+@import 'mixins';
 .nesting {
 	.panel.panel-default {
 		.panel-heading {
@@ -5,6 +6,7 @@
   			background: $green;
         }
   		.panel-body .panel.panel-default{
+  			@include shadow(rgba(122,122,122,1));
   			.panel-heading {
   				background: $blue;
   			}
