@@ -1,0 +1,32 @@
+.nesting .panel.panel-default .panel-heading {
+  color: #FFFFFF;
+  background: $green;
+}
+
+.nesting .panel.panel-default .panel-body .panel.panel-default .panel-heading {
+  background: $blue;
+}
+
+.nesting .panel.panel-default .panel-body .panel.panel-default .panel-body .panel.panel-default .panel-heading {
+  background: $red;
+}
+
+
+
+.nesting {
+	.panel.panel-default {
+		.panel-heading {
+  			color: #FFFFFF;
+  			background: $green;
+
+  		.panel-body .panel-heading {
+  			background: $blue;
+
+  			.panel-body{
+  				background: $red;
+  			}
+		}
+  	}
+  }
+}
+

@@ -47,6 +47,14 @@
 .nesting .panel.panel-default .panel-body .panel.panel-default .panel-body .panel.panel-default .panel-heading {
   background: #bf3232; }
 
+.nesting .panel.panel-default .panel-heading {
+  color: #FFFFFF;
+  background: #5cb85c; }
+  .nesting .panel.panel-default .panel-heading .panel-body .panel-heading {
+    background: #2e6da4; }
+    .nesting .panel.panel-default .panel-heading .panel-body .panel-heading .panel-body {
+      background: #bf3232; }
+
 .mixins .col-md-12 {
   margin: 0 0 20px 0; }
 
