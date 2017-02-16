@@ -39,7 +39,7 @@
 
 .mixins .mixins .col-md-12 {
   margin: 0 0 20px 0; }
-.mixins .mixins .alert, .mixins .mixins button, .mixins .mixins .progress {
+.mixins .mixins .alert, .mixins .mixins .inheritance .alert-success, .inheritance .mixins .mixins .alert-success, .mixins .mixins .inheritance .alert-info, .inheritance .mixins .mixins .alert-info, .mixins .mixins .inheritance .alert-warning, .inheritance .mixins .mixins .alert-warning, .mixins .mixins .inheritance .alert-danger, .inheritance .mixins .mixins .alert-danger, .mixins .mixins button, .mixins .mixins .progress {
   -webkit-box-shadow: -4px 9px 7px -5px #7a7a7a;
   -moz-box-shadow: -4px 9px 7px -5px #7a7a7a;
   box-shadow: -4px 9px 7px -5px #7a7a7a;
@@ -64,7 +64,7 @@
 
 .mixins .mixins .col-md-12 {
   margin: 0 0 20px 0; }
-.mixins .mixins .alert, .mixins .mixins button, .mixins .mixins .progress {
+.mixins .mixins .alert, .mixins .mixins .inheritance .alert-success, .inheritance .mixins .mixins .alert-success, .mixins .mixins .inheritance .alert-info, .inheritance .mixins .mixins .alert-info, .mixins .mixins .inheritance .alert-warning, .inheritance .mixins .mixins .alert-warning, .mixins .mixins .inheritance .alert-danger, .inheritance .mixins .mixins .alert-danger, .mixins .mixins button, .mixins .mixins .progress {
   -webkit-box-shadow: -4px 9px 7px -5px #7a7a7a;
   -moz-box-shadow: -4px 9px 7px -5px #7a7a7a;
   box-shadow: -4px 9px 7px -5px #7a7a7a;
@@ -75,7 +75,7 @@
   -moz-box-shadow: -4px 9px 7px -5px #7a7a7a;
   box-shadow: -4px 9px 7px -5px #7a7a7a; }
 
-.inheritance .alert-success, .inheritance .alert-info, .inheritance .alert-danger, .inheritance .alert-warning {
+.inheritance .alert, .inheritance .alert-success, .inheritance .alert-info, .inheritance .alert-warning, .inheritance .alert-danger {
   text-align: center;
   font-weight: bold;
   color: #FFFFFF; }

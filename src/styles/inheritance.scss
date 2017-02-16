@@ -1,24 +1,28 @@
+@mixin background($color){
+	@extend .alert;
+	background: $color;
+}
+
 .inheritance {
-	.alert-success, .alert-info, .alert-danger, .alert-warning {
+	.alert {
 	  text-align: center;
 	  font-weight: bold;
 	  color: #FFFFFF;
 	}
 
 	.alert-success {
-	  background: $green;
+	  @include background($green);
 	}
 
 	.alert-info {
-	  background: $blue;
+	  @include background($blue);
 	}
 
 	.alert-warning {
-	  background: $yellow;
+	   @include background($yellow);
 	}
 
 	.alert-danger {
-	  background: $red;
+	   @include background($red);
 	}
 }
-

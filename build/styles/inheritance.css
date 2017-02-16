@@ -1,24 +1,32 @@
 /*
 Error: Undefined variable: "$green".
-        on line 9 of src/styles/inheritance.scss
+        on line 14 of src/styles/inheritance.scss, in `background'
+        from line 14 of src/styles/inheritance.scss
 
-4: 	  font-weight: bold;
-5: 	  color: #FFFFFF;
-6: 	}
-7: 
-8: 	.alert-success {
-9: 	  background: $green;
-10: 	}
-11: 
-12: 	.alert-info {
-13: 	  background: $blue;
-14: 	}
+9: 	  font-weight: bold;
+10: 	  color: #FFFFFF;
+11: 	}
+12: 
+13: 	.alert-success {
+14: 	  @include background($green);
+15: 	}
+16: 
+17: 	.alert-info {
+18: 	  @include background($blue);
+19: 	}
 
 Backtrace:
-src/styles/inheritance.scss:9
+src/styles/inheritance.scss:14:in `background'
+src/styles/inheritance.scss:14
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:357:in `block (2 levels) in visit_mixin'
+/var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:357:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:357:in `block in visit_mixin'
+/var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
+/var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
+/var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /var/lib/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -77,4 +85,4 @@ src/styles/inheritance.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$green\".\A         on line 9 of src/styles/inheritance.scss\A \A 4: 	  font-weight: bold;\A 5: 	  color: #FFFFFF;\A 6: 	}\A 7: \A 8: 	.alert-success {\A 9: 	  background: $green;\A 10: 	}\A 11: \A 12: 	.alert-info {\A 13: 	  background: $blue;\A 14: 	}"; }
+  content: "Error: Undefined variable: \"$green\".\A         on line 14 of src/styles/inheritance.scss, in `background'\A         from line 14 of src/styles/inheritance.scss\A \A 9: 	  font-weight: bold;\A 10: 	  color: #FFFFFF;\A 11: 	}\A 12: \A 13: 	.alert-success {\A 14: 	  @include background($green);\A 15: 	}\A 16: \A 17: 	.alert-info {\A 18: 	  @include background($blue);\A 19: 	}"; }
